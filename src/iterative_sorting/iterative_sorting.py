@@ -56,15 +56,19 @@ def bubble_sort(arr):
 
 # Recrusive version
 
-# def bubble_sort(arr):
-#     swapped = False
-#     for i in range(0, len(arr) - 1):
-#         if arr[i+1] < arr[i]:
-#             arr[i], arr[i+1] = arr[i+1], arr[i]
-    # swapped = True
-    # if swapped:
-    #     return bubble_sort(arr)
-    # return arr
+# def bubble_sort( arr ):
+#     swaps_occurred = True
+#     while swaps_occurred:
+#         swaps_occurred = False
+#         for i in range(0, len(arr)-1):
+#             if arr[i] > arr[i+1]:
+#                 # swap
+#                 temp = arr[i]
+#                 arr[i] = arr[i+1]
+#                 arr[i+1] = temp
+#                 swaps_occurred = True
+
+#     return arr
 
 
 print(bubble_sort(arr))
