@@ -57,6 +57,27 @@ def bubble_sort(arr):
 
 print(bubble_sort(arr))
 
+# Recrusive version
+arr = [2, 5, 8, 9, 1, 3, 6, 7, 4]
+
+
+def bubble_sort_recursive(arr):
+    swaps_occurred = True
+    while swaps_occurred:
+        swaps_occurred = False
+        for i in range(0, len(arr)-1):
+            if arr[i] > arr[i+1]:
+                # swap
+                temp = arr[i]
+                arr[i] = arr[i+1]
+                arr[i+1] = temp
+                swaps_occurred = True
+
+    return arr
+
+
+print(bubble_sort_recursive(arr))
+
 # STRETCH: implement the Count Sort function below
 
 
